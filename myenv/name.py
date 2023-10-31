@@ -8,7 +8,7 @@ class HelloWorld(Resource):
     def get(self, name):
         return {'name': name}
     
-api.add_resource(HelloWorld, '/helloworld/<string:name>/<int:test>')
+api.add_resource(HelloWorld, '/helloworld/<string:name>')
 
 if __name__ == '__main__':
     app.run(debug=True)
